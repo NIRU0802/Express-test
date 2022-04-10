@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+
+    <link rel="stylesheet" type="text/css" href="Register.css">
+
+    <script>
+        function Rdata(){
+        let Rfname,Rlname,Remail,Rpass,Rcpass
+        Rfname = document.getElementById("Rfname").value
+        Rlname = document.getElementById("Rlname").value
+        Remail = document.getElementById("Remail").value
+        Rpass = document.getElementById("Rpass").value
+        Rcpass = document.getElementById("Rcpass").value
+  
+        console.log("Rfname",Rfname)
+        console.log("Rlname",Rlname)
+        console.log("Remail",Remail)
+        console.log("Rpass",Rpass)
+        console.log("Rcpass",Rcpass)
+    }
+      function Rformdisplay() {
+      DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+      message = "<b>FIRSTNAME: </b>" + document.Registerform.Rfname.value;
+      message += "<br><b>LASTNAME: </b>" + document.Registerform.Rlname.value;
+      message += "<br><b>EMAIL: </b>" + document.Registerform.Remail.value;
+      message += "<br><b>PASSWORD: </b>" + document.Registerform.Rpass.value;
+      message += "<br><b>CONFIRMPASSWORD: </b>" + document.Registerform.Rcpass.value;
+      DispWin.document.write(message);
+    }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" id="nav">
+      <div class="container-fluid" style="background-color: #000000;">
+        <a class="navbar-brand" href="Refood.html"><img src="E:\Website\Content\food-logo.png" style="width: 60px; height: 60px;"></a>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navrg">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Refood.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="card">
+      <h1>Register</h1>
+      <form name="Registerform" method="post">
+        <div class="txt_field">
+            <input type="text" id="Rfname" required>
+            <span></span>
+            <label>First Name</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" id="Rlname" required>
+            <span></span>
+            <label>Last Name</label>
+          </div>
+        <div class="txt_field">
+          <input type="email" id="Remail" required>
+          <span></span>
+          <label>Email</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="Rpass" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="txt_field">
+            <input type="password" id="Rcpass" required>
+            <span></span>
+            <label>Confirm Password</label>
+          </div>
+          <a href="#" onclick="Rformdisplay()" class="button1">Register</a>
+        <div class="signup_link">
+          Login <a href="E:\Website\Login.html">Alerady have an account!</a>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>

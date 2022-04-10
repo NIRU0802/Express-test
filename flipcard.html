@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: 'Times New Roman'; /* Set font. */
+}
+
+.flip-card {
+  width: 365px;
+  height: 300px;
+  perspective: 1000px; /*Change view of 3D positioning */
+  display: inline-table; /* Where to display block in webpage. */
+  padding: 50px; /* Distance between border & padding. */
+  block-size: 325px; /* Set block size. */  
+}
+
+.flip-card-inner {
+  position: relative; /* For set its normal position. */
+  width: 100%;
+  height: 100%;
+  text-align: center; /* Set text in middle. */
+  transition: transform 0.6s; /* Set effect for elements. */
+  transform-style: preserve-3d; /* Set 3D changing effect. */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); 
+}
+
+.flip-card-front, .flip-card-back {
+  position: fixed; /* Set fixed position of content. */
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /*  */
+  backface-visibility: hidden; /*  */
+}
+
+.flip-card-front {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 350px;
+}
+
+.flip-card-back {
+  background-color: #ffffff;
+  color: rgb(12, 11, 11);
+  transform: rotateY(180deg);
+}
+.button{
+  background-color: green;
+  padding: 10px 12px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.basefont1{
+  color: red;
+}
+.basefont2{
+  font-family: 'Times New Roman', Times, serif;
+}
+.basefont3{
+  font-size: medium;
+}
+table,td{
+  border: 1px solid black;
+}
+th{
+  background-color: green;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Card Flip with Text</h1>
+<h3>Hover over the image below:</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< !-...->"</h2><hr>
+      <blockquote>The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.</blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      <P>< !-- This is a comment --></P>
+      <h3>Output:-</h3>
+      <P>Comments are not displayed in the browsers.</P>
+      <a href="https://www.w3schools.com/tags/tag_comment.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< !DOCTYPE>"</h2><hr>
+      <blockquote>All HTML documents must start with a<b>< !DOCTYPE></b> declaration.</blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      <P>< !DOCTYPE html></P>
+      <h3>Output:-</h3>
+      < !DOCTYPE html><br><br>
+      <a href="https://www.w3schools.com/tags/tag_doctype.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< A>"</h2><hr>
+      <blockquote>The (a) tag defines a hyperlink, which is used to link from one page to another.</blockquote>
+      <blockquote>(a) tag defines a hyperlink, which is used to link from one page to another.</blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      <P>< a href="https://www.w3schools.com/tags/tag_a.asp" class="button"</P>
+      <h3>Output:-</h3>
+      <a href="https://www.w3schools.com/tags/tag_a.asp">Tag< A></a>
+      <br><br>
+      <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Abbr>"</h2><hr>
+      <blockquote>The < abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS".</blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      The < abbr title="Hyper Text Markup Language">HTML</abbr> (Hyper Text Markup Language)
+      <h3>Output:-</h3>
+      <P>The <abbr title="Hyper Text Markup Language">HTML</abbr> (Hyper Text Markup Language)</P>
+      <a href="https://www.w3schools.com/tags/tag_abbr.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Acronym>"</h2><hr>
+      <blockquote>The < acronym> tag was used in HTML 4 to define an acronym.</blockquote>
+      <blockquote style="color:red"><b>Not Supported in HTML5.</b></blockquote> 
+      <blockquote><b>Use instead < abbr></b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      The < abbr title="Hyper Text Markup Language">HTML</abbr> (Hyper Text Markup Language)
+      <h3>Output:-(Abbr Tag)</h3>
+      <P>The <abbr title="Hyper Text Markup Language">HTML</abbr> (Hyper Text Markup Language)</P>
+      <a href="https://www.w3schools.com/tags/tag_acronym.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Address>"</h2><hr>
+      <blockquote>The < address> tag defines the contact information for the author/owner of a document or an article.</blockquote>
+      <blockquote>The contact information can be an email address, URL, physical address, phone number, social media handle, etc.</blockquote>  
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < address><br>
+        Written By Niraj Kathe
+        <br> < a href="mailto:nirajkathe@gmail.com">Contact Us</a><br>
+    < /address>
+      <h3>Output:-</h3>
+      <P>The <abbr title="Hyper Text Markup Language">HTML</abbr> (Hyper Text Markup Language)</P>
+      <a href="https://www.w3schools.com/tags/tag_address.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Applet>"</h2><hr>
+      <blockquote>The < applet> tag was used in HTML 4 to define an embedded applet (Plug-in).</blockquote>
+      <blockquote style="color:red"><b>Not Supported in HTML5.</b></blockquote>
+      <blockquote><b>Use instead < video></b></blockquote> 
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      <v ideo width="320" height="240" controls>
+        < source src="D:\Madara Uchiha .mp4" type="video/mp4">
+        < source src="D:\Madara Uchiha .mp4" type="video/ogg">
+        Your browser does not support the video tag.
+      < /video>
+      <h3>Output:-(Video Tag)</h3>
+      <video width="320" height="240" controls>
+        <source src="D:\Madara Uchiha .mp4" type="video/mp4">
+      </video>
+      <a href="https://www.w3schools.com/tags/tag_applet.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Area>"</h2><hr>
+      <blockquote>The < area> tag defines an area inside an image map<b>(an image map is an image with clickable areas)</b>.</blockquote>
+      <blockquote>< area> elements are always nested inside a < map> tag.</blockquote>
+      <blockquote><b>Use instead < video></b></blockquote> 
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < img src="D:\Naruto.jpg" alt="Naruto" usemap="#basic" height="350" width="350">
+        < map name="basic">
+            < area shape="rect" coords="34,44,270,350" < a href="https://www.w3schools.com/tags/tag_area.asp">< /a><br>
+        < /map>
+      <h3>Output:-</h3>
+      <img src="D:\Naruto.jpg" alt="Naruto" usemap="#basic" height="300" width="350">
+        <map name="basic">
+            <area shape="square" coords="34,44,270,350" <a href="https://www.w3schools.com/tags/tag_area.asp"></a><br>
+        </map>
+      <a href="https://www.w3schools.com/tags/tag_area.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Article>"</h2><hr>
+      <blockquote>The< article> tag specifies independent, self-contained content.</blockquote>
+      <blockquote>An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.</blockquote> 
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < article>
+        < p>To represent an article. Used to contain info that may be independent from the site.< /p>
+      < /article>
+      <h3>Output:-</h3>
+      <article>
+        <p>To represent an article. Used to contain info that may be independent from the site.</p>
+      </article>
+      <a href="https://www.w3schools.com/tags/tag_article.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Aside>"</h2><hr>
+      <blockquote>The < aside> tag defines some content aside from the content it is placed in.</blockquote>
+      <blockquote>The aside content should be indirectly related to the surrounding content.</blockquote>
+      <blockquote><b>Aside Tag makes Heading Small.</b></blockquote> 
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < aside>
+        < h2>This is heading text in Aside Tag< /h2>
+      < /aside>
+      <h3>Output:-</h3>
+      <h2>This is normal Heading Tag</h2>
+      <aside>
+        <h2>This is heading text in Aside Tag</h2>
+      </aside>
+      <a href="https://www.w3schools.com/tags/tag_aside.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Audio>"</h2><hr>
+      <blockquote>The < audio> tag is used to embed sound content in a document, such as music or other audio streams.</blockquote>
+      <blockquote>The < audio> tag contains one or more < source> tags with different audio sources. The browser will choose the first source it supports.</blockquote>
+      <blockquote><b>Used to embed audio file in webpage.</b></blockquote> 
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < audio controls>
+        < Source src="D:\Abe yaar.mp3" type="audio/mpeg ">
+      < /audio>
+      <h3>Output:-</h3>
+      <audio controls>
+        <Source src="D:\Abe yaar.mp3" type="audio/mpeg ">
+      </audio>
+      <a href="https://www.w3schools.com/tags/tag_audio.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< B>"</h2><hr>
+      <blockquote>The < b> tag specifies bold text without any extra importance.</blockquote>
+      <blockquote><b>Making bold text.</b></blockquote> 
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < b> Make text bold< /b>
+      <h3>Output:-</h3>
+      <p><b>Make text bold</b></p>
+      <a href="https://www.w3schools.com/tags/tag_b.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Base>"</h2><hr>
+      <blockquote><b>Used in Head Tag.</b></blockquote>
+      <blockquote>The < base> tag specifies the base URL and/or target for all relative URLs in a document.</blockquote>
+      <blockquote>The < base> tag must have either an href or a target attribute present, or both.</blockquote> 
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < head>
+        < base href="https://www.w3schools.com/" target="_blank">
+      < /head>
+      <h3>Output:-</h3>
+      <p>Not Shown BCZ this tag not working in < body> tag.</p>
+      <a href="https://www.w3schools.com/tags/tag_base.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Basefont>"</h2><hr>
+      <blockquote><b>Used to set the default color, font, size of the text.</b></blockquote>
+      <blockquote style="color:red"><b>Not Supported in HTML5.</b></blockquote>
+      <blockquote><b>Used instead tags in CSS (text-color, font-family, font-size)</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < p class="basefont1">Text Color< /p><br>
+      < p class="basefont2">Font Family< /p><br>
+      < p class="basefont3">Font Size< /p>
+      <h3>Output:-</h3>
+      <p class="basefont1">Text Color</p>
+      <p class="basefont2">Font Family</p>
+      <p class="basefont3">Font Size</p>
+      <a href="https://www.w3schools.com/tags/tag_basefont.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Bdi>"</h2><hr>
+      <blockquote>BDI stands for Bi-Directional Isolation.</blockquote>
+      <blockquote><b>Change the direction of text.</b></blockquote>
+      <blockquote><b>Useful when website dynamically inserts text and doesn't know the direction.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < bdi>Content< /bdi>
+      <h3>Output:-</h3>
+      <p><bdi>Content</bdi></p>
+      <a href="https://www.w3schools.com/tags/tag_bdi.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Bdo>"</h2><hr>
+      <blockquote>BDO stands for Bi-Directional Override.</blockquote>
+      <blockquote><b>Used to override the current text direction.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < p> bdo dir="rtl">This paragraph will go right to left.< /bdo>< /p> 
+      <h3>Output:-</h3>
+      <p><bdo dir="rtl">This paragraph will go right to left.</bdo></p> 
+      <a href="https://www.w3schools.com/tags/tag_bdo.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Bgsound>"</h2><hr>
+      <blockquote><b>Used to play soundtrack in background.</b></blockquote>
+      <blockquote>This tag works in internet explorer.</blockquote>
+      <blockquote style="color:red"><b>Not Supported in Chrome.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < bgsound src="D:\abe yaar.mp3"/>
+      <h3>Output:-</h3>
+      <bgsound src="D:\abe yaar.mp3"/>
+      <p>Not Supported in Chrome.</p>
+      <a href="https://www.geeksforgeeks.org/html-bgsound-tag/?ref=gcse" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Big>"</h2><hr>
+      <blockquote><b>Used to increase size of selected text.</b></blockquote>
+      <blockquote><b>Use instead tag in CSS (font-size)</b></blockquote>
+      <blockquote style="color:red"><b>Not Supported in Chrome.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < p class="basefont3">Font Size< /p>
+      <h3>Output:-</h3>
+      <p class="basefont3">Font Size</p>
+      <a href="https://www.w3schools.com/tags/tag_big.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Blockquote>"</h2><hr>
+      <blockquote><b>Specifies a section that is quoted from another source.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < blockquote>Specifies a section that is quoted from another source.< /blockquote>
+      <h3>Output:-</h3>
+      <p>(Paragraph Tag)Specifies a section that is quoted from another source.</p>
+      <blockquote>(Blockquote Tag)Specifies a section that is quoted from another source.</blockquote>
+      <a href="https://www.w3schools.com/tags/tag_blockquote.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Body>"</h2><hr>
+      <blockquote><b>Defines the document's body.</b></blockquote>
+      <blockquote><b>It contains headings, paragraphs, images etc.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      <b>
+      < body><br>
+        < h4>This is a heading< /h4><br>
+        < p>This is a paragraph.< /p><br>
+      < /body>
+      </b>
+      <h3>Output:-</h3>
+      <body>
+        <h4>This is a heading</h4>
+        <p>This is a paragraph.</p>
+      </body>
+      <a href="https://www.w3schools.com/tags/tag_body.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Br>"</h2><hr>
+      <blockquote><b>Inserts a single line break.</b></blockquote>
+      <blockquote><b>Useful for writing poems.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      <b>< p>Used to< br>Break line< /p></b>
+      <h3>Output:-</h3>
+      <p>Used to<br>Break line</p>
+      <a href="https://www.w3schools.com/tags/tag_br.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Button>"</h2><hr>
+      <blockquote><b>Defines a clickable button.</b></blockquote>
+      <blockquote><h4>Ways to create button:</h4></blockquote>
+      <p>
+        <mark><b>
+          < button>Default Button< /button><br>
+          < a href="#" class="button">Link Button< /a><br>
+          < button class="button">Button< /button><br>
+          < input type="button" class="button" value="Input Button">
+        </b></mark>
+      </p>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      <b>< button type="button">Click Me< /button></b>
+      <h3>Output:-</h3>
+      <p><button type="button">Click Me</button></p>
+      <a href="https://www.w3schools.com/tags/tag_button.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Canvas>"</h2><hr>
+      <blockquote><b>Used to draw graphics.</b></blockquote>
+      <blockquote style="color: red;"><b>In maintenance...</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      
+      <h3>Output:-</h3>
+      
+      <a href="https://www.w3schools.com/tags/tag_canvas.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Caption>"</h2><hr>
+      <blockquote><b>Specify the caption of a table.(Title of table)</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+
+      <h3>Output:-</h3>
+      <table>
+        <caption>Laptop Prices</caption>
+        <tr>
+            <th>Model</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Dell Alienware</td>
+            <td>₹ 1,34,989.97</td>
+        </tr>
+        <tr>
+            <td>HP Pavilion</td>
+            <td>₹ 89,990</td>
+        </tr>
+    </table><br>
+      <a href="https://www.w3schools.com/tags/tag_caption.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Center>"</h2><hr>
+      <blockquote><b>Elements will be displayed at the middle of webpage.</b></blockquote>
+      <blockquote><b>Use instead tag in CSS (text-align)</b></blockquote>
+      <blockquote style="color: red;"><b>Not Supported in HTML5.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < p>Center align text.< /p>
+      <h3>Output:-</h3>
+      <p>Center align text.</p>
+      <a href="https://www.w3schools.com/tags/tag_center.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Code>"</h2><hr>
+      <blockquote><b>Elements will be displayed at the middle of webpage.</b></blockquote>
+      <blockquote>The content inside is displayed in the browser's default<b> monospace font.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < Code>Content in Monospace Font.< /Code>
+      <h3>Output:-</h3>
+      <p><Code>Content in Monospace Font.</Code></p>
+      <a href="https://www.w3schools.com/tags/tag_code.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Col> & < colgroup>"</h2><hr>
+      <blockquote><b>Set properties for each column (Applying Styles).</b></blockquote>
+      <blockquote>< col> tag within a < colgroup> element.</b></blockquote>
+      <blockquote>< colgroup> tag within a < table> element.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < colgroup>
+        < col style="background-color:rgb(221, 43, 43)"><br>
+        < col style="background-color: rgb(253, 158, 158);">
+      < /colgroup>
+      <h3>Output:-</h3>
+      <table>
+        <colgroup>
+          <col style="background-color: rgb(240, 133, 133);">
+          <col style="background-color: rgb(115, 135, 223)">
+          <col style="background-color: rgb(115, 223, 148)">
+        </colgroup>
+        <tr>
+          <th>Brand</th>
+          <th>Model</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Dell</td>
+          <td>Alienware</td>
+          <td>₹ 1,34,989.97</td>
+        </tr>
+        <tr>
+          <td>HP</td>
+          <td>Pavilion</td>
+          <td>₹ 89,989</td>
+        </tr>
+      </table>
+      <a href="https://www.w3schools.com/tags/tag_col.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+      <a href="https://www.w3schools.com/tags/tag_colgroup.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Data>"</h2><hr>
+      <blockquote><b>Give unique id to the product.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < ul>
+        < li>< data value="001">Dell Alienware< /data>< /li><br>
+        < li>< data value="002">HP Pavilion< /data>< /li><br>
+        < li>< data value="003">Acer Predator< /data>< /li>
+      < /ul>
+      <h3>Output:-</h3>
+      <ul>
+        <li><data value="001">Dell Alienware</data></li>
+        <li><data value="002">HP Pavilion</data></li>
+        <li><data value="003">Acer Predator</data></li>
+      </ul>
+      <a href="https://www.w3schools.com/tags/tag_data.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Datalist>"</h2><hr>
+      <blockquote><b> specifies a list of pre-defined options for an < input> element.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < datalist id="browsers"><br>
+        < option value="Chrome"><br>
+        < option value="Firefox"><br>
+        < option value="Opera"><br>
+        < option value="Internet Explorer">
+      < /datalist>
+      <h3>Output:-</h3>
+      <form action="" method="get">
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+          <option value="Chrome">
+          <option value="Firefox">
+          <option value="Opera">
+          <option value="Internet Explorer">
+        </datalist>
+        <input type="submit">
+      </form><br>
+      <a href="https://www.w3schools.com/tags/tag_datalist.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< DD>"</h2><hr>
+      <blockquote><b> Used to describe a term/name in a description list</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < dl>  
+        < dt>Laptop< /dt><br>
+        < dd>Gaming Laptop< /dd> 
+        < /dl>
+      <h3>Output:-</h3>
+      <dl>  <!-- Descripton List-->
+        <dt>Laptop</dt> <!--Define Terms-->
+        <dd>Gaming Laptop</dd> <!--Describe Data-->
+        <dt>Mouse</dt>
+        <dd>Gaming Mouse</dd>
+      </dl>
+      <a href="https://www.w3schools.com/tags/tag_dd.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Del>"</h2><hr>
+      <blockquote><b> Defines text has been deleted from a doc.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < p>The text has been < del>not< /del> deleted from a doc.< /p>
+      <h3>Output:-</h3>
+      <p>The text has been <del>not</del> deleted from a doc.</p>
+      <a href="https://www.w3schools.com/tags/tag_del.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h2> Tag "< Details>"</h2><hr>
+      <blockquote><b> Specify the additional details on the web page that the user can view or hide on demand.</b></blockquote>
+    </div>
+    <div class="flip-card-back">
+      <h3>Implementation:-</h3>
+      < details><br>
+        < summary>< b>List< /b>< /summary><br>
+        < p>Laptop< /p><br>
+        < p>Mouse< /p><br>
+        < p>Keyboard< /p><br>
+      < /details>
+      <h3>Output:-</h3>
+      <details>
+        <summary><b>List</b></summary> <!--Summary head of deatail tag-->
+        <p>Laptop</p>
+        <p>Mouse</p>
+        <p>Keyboard</p>
+      </details><br>
+      <a href="https://www.w3schools.com/tags/tag_del.asp" target="_blank" class="button"><b>More Tutorials</b></a>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Food</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <!---Font Awesome Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="food.css">
+
+  <script>
+    function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      var visivel = e.style.display == 'block';
+      var menus = document.querySelectorAll('[id^=menu]');
+      for (var i = 0; i < menus.length; i++) {
+        menus[i].style.display = 'none';
+      };
+      if (visivel) e.style.display = 'none';
+      else e.style.display = 'block';
+    }
+
+    function Cdata(){
+      let fname,lname,email
+      fname = document.getElementById("Cfname").value
+      lname = document.getElementById("Clname").value
+      email = document.getElementById("Cemail").value
+
+      console.log("Cfname",fname)
+      console.log("Clname",lname)
+      console.log("Cemail",email)
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo">
+      <a href="#"><img src="E:\html\Content\food-logo.png" style="width: 90px; height: 90px;"></a>
+    </div>
+    <div class="mnu">
+      <a href="#">Home</a>
+      <a href="#ourmnu">Menu</a>
+      <a href="#services">Services</a>
+      <a href="#contactus">Contact</a>
+      <a href="#" class="login-logo"><img src="E:\html\New\login.png " width="60px" height="60px" style="margin-bottom: 85px;"></a>
+    </div>
+  </div>
+  <section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="width: 100%; height: 900px;">
+        <div class="carousel-item active">
+          <img src="E:\html\Content\Pizzaimgslider.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" style="width: 100%; height: 900px;">
+          <img src="E:\html\Content\burgerimgslider.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" style="width: 100%; height: 900px;">
+          <img src="E:\html\Content\burger2imgslider.jfif" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+<section class="set">
+  <!---<video autoplay loop muted src="E:\html\Content\Food Film _ Cinematic Burger(2K_60FPS).mp4" height="810px"></video> --->
+  <img src="Content/burger.png" width="50px" height="50px" class="img1burger">
+  <img src="Content/burger.png" width="50px" height="50px" class="img2burger">
+  <img src="Content/burger.png" width="50px" height="50px" class="img3burger">
+  <img src="Content/burger.png" width="90px" height="90px" class="img4burger">
+  <img src="Content/burger.png" width="150px" height="150px" class="img5burger">
+  <img src="Content/cocktail.png" width="50px" height="50px" class="img1cocktail">
+  <img src="Content/cocktail.png" width="70px" height="70px" class="img2cocktail">
+  <img src="Content/fast-food.png" width="70px" height="70px" class="img1fastfood">
+  <img src="Content/french-fries.png" width="70px" height="70px" class="img1french-fries">
+  <img src="Content/pizza.png" width="70px" height="70px" class="img1pizza">
+
+
+  <section id="ourmnu">
+    <h2 style="padding-left: 800px; font-size: 55px; font-family: cursive; position: absolute; color: rgb(0, 0, 0);"><b>Our Menu</b></h2>
+    <br><br><br><br><br>
+
+    <div class="btngrp">
+      <a href="#" class="burger" onclick="toggle_visibility('menu1');"><b>Burgers</b></a>
+      
+      <a href="#" class="pizza" onclick="toggle_visibility('menu2');"><b>Pizzas</b></a>
+     
+      <a href="#" class="toast" onclick="toggle_visibility('menu3');"><b>Toasts</b></a>
+
+      <a href="#" class="salad" onclick="toggle_visibility('menu4');"><b>Salads</b></a>
+      
+      <a href="#" class="drinks" onclick="toggle_visibility('menu5');"><b>Drinks</b></a>
+      
+      <a href="#" class="desert" onclick="toggle_visibility('menu6');"><b>Deserts</b></a>
+    </div>
+  </section>
+
+  <br><br>
+  <br><br>
+  <br><br>
+
+  <section>
+   
+    <div id="menu1">
+    
+      <span class="burger">
+        <span class="burgers">
+          <div class="card">
+            <img src="D:\WebSite\burger\Classicburger310x260.png" alt="ClassicBurger" style="width:auto"></a>
+            <div class="container">
+              <h2>Classic Burger</h2>
+              <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double
+                American cheddar cheese sauce.</p>
+              <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+              <a href="#" class="button"><b>Order Now</b></a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="D:\WebSite\burger\doubleburger310x260.png" alt="DoublecBurger" style="width:auto"></a>
+            <div class="container">
+              <h2>Double Burger</h2>
+              <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double
+                American cheddar cheese sauce.</p>
+              <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+              <a href="#" class="button"><b>Order Now</b></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="D:\WebSite\burger\californiaburger310x260.png" alt="CaliforniaBurger" style="width:auto">
+            <div class="container">
+              <h2>California Burger</h2>
+              <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double
+                American cheddar cheese sauce.</P>
+              <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+              <a href="#" class="button"><b>Order Now</b></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="D:\WebSite\burger\chickenburger310x260.png" alt="ChickenBurger" style="width:auto">
+            <div class="container">
+              <h2>Chicken Burger</h2>
+              <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double
+                American cheddar cheese sauce.</P>
+              <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+              <a href="#" class="button"><b>Order Now</b></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="D:\WebSite\burger\mexicanburger310x260.png" alt="MexicanBurger" style="width:auto">
+            <div class="container">
+              <h2>Mexican Burger</h2>
+              <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double
+                American cheddar cheese sauce.</P>
+              <p style="text-align: center; font-size: 28px; color: red;"><b>RS.<del>140</del>100</b></p>
+              <a href="#" class="button"><b>Order Now</b></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="D:\WebSite\burger\miniburger310x260.png" alt="MiniBurger" style="width:auto">
+            <div class="container">
+              <h2>Mini Burger</h2>
+              <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double
+                American cheddar cheese sauce.</P>
+              <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+              <a href="#" class="button"><b>Order Now</b></a>
+            </div>
+          </div>
+        </span>
+      </span>
+    </div>
+  </section>
+
+  <div id="menu2" style="display:none;">
+    <span class="pizza">
+      <div class="card">
+        <img src="D:\WebSite\pizza\classiccheese-pizzas-310x260.png" alt="classiccheese-pizza" style="width:auto">
+        <div class="container">
+          <h2>Classic Pizza</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\pizza\margherita-pizzas-310x260.png" alt="margherita-pizza" style="width:auto">
+        <div class="container">
+          <h2>Margherita Pizza</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\pizza\peeperoni-pizzas-310x260.png" alt="peeperoni-pizza" style="width:auto">
+        <div class="container">
+          <h2>Peeperoni Pizza</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\pizza\sicilian-pizzas-310x260.png" alt="sicilian-pizza" style="width:auto">
+        <div class="container">
+          <h2>Silician Pizza</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\pizza\hawaiian-pizzas-310x260.png" alt="hawaiian-pizza" style="width:auto">
+        <div class="container">
+          <h2>Hawaiian Pizza</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\pizza\neapolitian-pizzas-310x260.png" alt="neapolitian-pizza" style="width:auto">
+        <div class="container">
+          <h2>Neapolitian Pizza</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+    </span>
+  </div>
+
+
+  <div id="menu3" style="display:none;">
+    <span class="toast">
+      <div class="card">
+        <img src="D:\WebSite\toast\tomato-toast310x260.png" alt="tomato-toast" style="width:auto">
+        <div class="container">
+          <h2>Tomato-Toast</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\toast\cheese-toast310x260.png" alt="cheese-toast" style="width:auto">
+        <div class="container">
+          <h2>Cheese-Toast</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\toast\beef-toast-310x260.png" alt="beef-toast" style="width:auto">
+        <div class="container">
+          <h2>Beef-Toast</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\toast\italian-toast-310x260.png" alt="italian-toast" style="width:auto">
+        <div class="container">
+          <h2>Italian-Toast</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\toast\mediterranean-toast-310x260.png" alt="mediterranean-toast" style="width:auto">
+        <div class="container">
+          <h2>Mediterranean-Toast</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\toast\chicken-toast-310x260.png" alt="chicken-toast" style="width:auto">
+        <div class="container">
+          <h2>Chicken-Toast</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+    </span>
+  </div>
+
+  <div id="menu4" style="display:none;">
+    <span class="salad">
+      <div class="card">
+        <img src="D:\WebSite\salad\salads-1-310x260.png" alt="BuffaloBleu-Salad" style="width:auto">
+        <div class="container">
+          <h2>Buffalo Bleu</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\salad\salads-2-310x260.png" alt="Greek-Salad" style="width:auto">
+        <div class="container">
+          <h2>Greek Salad</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\salad\salads-3-310x260.png" alt="Turkey-Salad" style="width:auto">
+        <div class="container">
+          <h2>Turkey Salad</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\salad\salads-4-310x260.png" alt="Mediterranean-Salad" style="width:auto">
+        <div class="container">
+          <h2>Mediterranean</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\salad\salads-5-310x260.png" alt="Farmhouse-Salad" style="width:auto">
+        <div class="container">
+          <h2>Farmhouse Salad</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\salad\salads-4-310x260.png" alt="ChickenCaprese-Salad" style="width:auto">
+        <div class="container">
+          <h2>Chicken Salad</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+    </span>
+  </div>
+
+  <div id="menu5" style="display:none;">
+    <span class="drink">
+      <div class="card">
+        <img src="D:\WebSite\drink\drinks-1-310x260.png" alt="DietCoke-Drink" style="width:auto">
+        <div class="container">
+          <h2>Diet Coke</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\drink\drinks-2-310x260.png" alt="BlueMoon-Drink" style="width:auto">
+        <div class="container">
+          <h2>Blue Moon</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\drink\drinks-3-310x260.png" alt="SparklingWater-Drink" style="width:auto">
+        <div class="container">
+          <h2>Sparkling Water</h2>
+         +  <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\drink\drinks-4-310x260.png" alt="RedDawn-Drink" style="width:auto">
+        <div class="container">
+          <h2>Red Dawn</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\drink\drinks-5-310x260.png" alt="PinaColada-Drink" style="width:auto">
+        <div class="container">
+          <h2>Pina Colada</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\drink\drinks-3-310x260.png" alt="ClassicLemonade-Drink" style="width:auto">
+        <div class="container">
+          <h2>Classic Lemonade</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+    </span>
+  </div>
+
+  <div id="menu6" style="display:none;">
+    <span class="desert">
+      <div class="card">
+        <img src="D:\WebSite\desert\deserts-1-310x260.png" alt="FrenchMacroons-Desert" style="width:auto">
+        <div class="container">
+          <h2>French Macroons</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\desert\deserts-2-310x260.png" alt="BlueberryMuffins-Desert" style="width:auto">
+        <div class="container">
+          <h2>Blueberry Muffins</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\desert\deserts-3-310x260.png" alt="Donuts-Desert" style="width:auto">
+        <div class="container">
+          <h2>Donuts</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\desert\deserts-4-310x260.png" alt="IceCream-Desert" style="width:auto">
+        <div class="container">
+          <h2>IceCream</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\desert\deserts-5-310x260.png" alt="Pancakes-Desert" style="width:auto">
+        <div class="container">
+          <h2>Pancakes</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="D:\WebSite\desert\deserts-4-310x260.png" alt="ChochalteFudgeCake-Desert" style="width:auto">
+        <div class="container">
+          <h2>Chocolate Fudge</h2>
+          <p>Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American
+            cheddar cheese sauce.</P>
+          <p style="text-align: center; font-size: 28px; color: red;"><b>RS.100</b></p>
+          <a href="#" class="button"><b>Order Now</b></a>
+        </div>
+      </div>
+    </span>
+  </div>
+  </section>
+</section>
+  <br>
+  <br>
+  <br><br><br><br>
+  <section>
+    <div class="offer">
+      <a href="#" class="offerbtn"><b>ORDER ONLINE</b></a>
+      <img src="D:\d-dominos.jpg" width="auto" height="auto">
+    </div>
+    <br><br><br><br><br>
+  </section>
+
+  <section id="services">
+    <section class="about">
+      <div class="content">
+        <span class="fastdelivery" style="word-wrap: break-word; width: 260px;">
+          <img src="D:\clock.png" style="width: 80px; height: 80px;">
+          <h5 style="padding-left: 58px;">Fast Delivery</h5>
+          <P>Everything you order at QuickFood will be quickly delivered to your door.</P>
+        </span>
+        <span class="freshfood" style="word-wrap: break-word; width: 260px;">
+          <img src="D:\grocery.png" style="width: 80px; height: 80px;">
+          <h5 style="padding-left: 64px;">Fresh Food</h5>
+          <p>We use only the best ingredients to cook the tasty fresh food for you.</p>
+        </span>
+        <span class="experiencedchefs" style="word-wrap: break-word; width: 260px;">
+          <img src="D:\chef.png" style="width: 80px; height: 80px;">
+          <h5 style="padding-left: 40px;">Experienced Chefs</h5>
+          <p>Our staff consists of chefs and cooks with years of experience.</p>
+        </span>
+        <span class="dishes" style="word-wrap: break-word; width: 260px;">
+          <img src="D:\dishes.png" style="width: 80px; height: 80px;">
+          <h5 style="padding-left: 40px;">A Variety of Dishes</h5>
+          <p>In our menu you’ll find a wide variety of dishes, desserts, and drinks.</p>
+        </span>
+      </div>
+    </section>
+  </section>
+  <br><br>
+  <section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59990.68960223041!2d73.76837562799982!3d19.990959594865203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddd290b09914b3%3A0xcb07845d9d28215c!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1644677158182!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <br><br><br><br>
+  <footer>
+    <section id="contactus">
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <a href="#"><img src="E:\html\Content\food-logo.png" style="width: 90px; height: 90px;"></a>
+            <p>Address:- Nashik</p>
+            <p>Phone No. 111-222-333</p>
+            <p>Email:-<a href="mailto:nirajkathe@gmail.com">food@gmail.com</a></p>
+          </div>
+          <div class="box">
+            <h4 style="font-size: 26px;">OUR MENU</h4>
+            <a href="#">Burgers</a>
+            <a href="#">Pizzas</a>
+            <a href="#">Toasts</a>
+            <a href="#">Salads</a>
+            <a href="#">Drinks</a>
+            <a href="#">Deserts</a>
+          </div>
+          <div class="box">
+            <form>
+              <h5 style="font-size: 26px;">Contact Us</h5>
+              <label for="Cfname">First Name</label><br>
+              <input type="text" id="Cfname" placeholder="Your first name..." required><br>
+
+              <label for="Clname">Last Name</label><br>
+              <input type="text" id="Clname" placeholder="Your last name..."><br>
+
+              <label for="Cemail">Email</label><br>
+              <input type="email" id="Cemail" placeholder="Enter your email..."><br>
+              <a href="#" onclick="Cdata()" class="button1">Submit</a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+  </footer>
+</body>
+</html>

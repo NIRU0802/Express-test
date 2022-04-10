@@ -1,0 +1,154 @@
+
+svg  h5{
+    display: inline;
+}
+.navbar-nav {
+    float: left;
+    height: 20px;
+    font-size: 16px;
+    padding-right: 35px;
+    padding-top: 1px;
+    text-decoration: none;
+    margin: 1;
+    margin-left: 230px;
+}
+.nav-link{
+    margin-top: -10px;
+}
+.nav-lg {
+    position: absolute;
+    margin-top: -21px;
+    padding-left: 56px;
+}
+.navbar-nav .nav-item{
+    margin-left: 56px;
+}
+.navbar-nav .nav-item img{
+    margin-bottom: 1px;
+}
+.btn-group{
+    padding-left: 690px;
+    position: absolute;
+}
+.btn-group button {
+    text-decoration: none;   
+    border: 1px solid;
+    border-radius: 10px 5px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer; 
+}
+.btn-group button:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+.col button{
+    text-decoration: none;   
+    border: none;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    padding: 14px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer; 
+}
+.col button:hover{
+    background-color: white;
+    border: 1px solid;
+    border-color: rgb(204, 19, 19);
+    color: black;
+}
+.offer button{
+    text-decoration: none;   
+    border: none;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    padding: 14px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer; 
+}
+#offerbtn{
+    position: absolute;
+    margin-left: 460px;
+    margin-top: 274px;
+}
+.offer button:hover{
+    background-color: white;
+    color: black;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: inline-block;
+    margin: 4px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.col{
+    display: inline-block;
+}
+.offerbtn{
+    position: absolute;
+    background-color: #ec4141;
+    padding: 15px 55px;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    color:white;
+    margin-left: 450px;
+    margin-top: 272px;
+    text-align: center;
+    font-size: 16px;
+}
+.offerbtn:hover{
+    background-color: white;
+    color: black;
+}
+.offer img{
+    margin-left: 156px;
+}
+.col-sm img{
+    margin-left: 260px;
+}
+.col-sm h5{
+    margin-left: 190px;
+}
+.col-sm p{
+    margin-left: 200px;
+}
+.col-sm #para4{
+    margin-right: 151px;
+}
+#rating{
+   line-height: 1px;
+}
+#ftmnu{
+    text-decoration: none;
+}
+.services {
+    word-spacing: 100px;
+    text-align: left;
+}
+.mail a{
+    color: white;
+    text-decoration: none;
+}
+.mail a:hover{
+    color: yellow;
+}
+
+
